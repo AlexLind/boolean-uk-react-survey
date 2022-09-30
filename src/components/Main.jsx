@@ -27,13 +27,12 @@ function Main() {
     }
 
     console.log(surveyAnswer);
-    resetForm()
+    event.target.reset()
+    resetForm();
 
   }
 
     const resetForm = () => {
-      setColor(0);
-      setTimeSpend([]);
       setComment(``);
       setName(``);
       setEmail(``);
